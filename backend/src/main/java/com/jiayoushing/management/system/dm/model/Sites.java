@@ -2,6 +2,7 @@ package com.jiayoushing.management.system.dm.model;
 
 import java.time.LocalDate;
 
+import org.hibernate.annotations.SQLRestriction;
 import org.springframework.data.annotation.Id;
 
 import jakarta.persistence.Column;
@@ -18,19 +19,22 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SQLRestriction("is_deleted = '0'")
 public class Sites {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
-    @Column(nullable = false, length = 100)
+    /** 工地的名稱 */
+    @Column(nullable = false)
     private String name;
 
-    @Column(length = 255)
-    private String location;
-
-    @Column(nullable = false)
+    /** 工地的開始時間 */
     private LocalDate startDate;
 
+    /** 工地的結束時間 */
     private LocalDate endDate;
+
+    @Column(nullable = false)
+    private String isDeleted = "0";
 }

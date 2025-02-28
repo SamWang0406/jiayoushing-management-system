@@ -1,8 +1,14 @@
 com/jiayoushing/management/system/App.class
 com/jiayoushing/management/system/dm/model/Equipments$Status.class
-com/jiayoushing/management/system/dm/model/Equipments.class
-com/jiayoushing/management/system/dm/model/Role.class
+com/jiayoushing/management/system/dm/repository/DailyRecordsRepository.class
+com/jiayoushing/management/system/dm/repository/RoleRepository.class
+com/jiayoushing/management/system/dm/repository/UsersRepository.class
 com/jiayoushing/management/system/dm/model/Users.class
 com/jiayoushing/management/system/dm/model/DailyRecords.class
-com/jiayoushing/management/system/dm/model/Sites.class
 com/jiayoushing/management/system/dm/model/Materials.class
+com/jiayoushing/management/system/dm/repository/EquipmentsRepository.class
+com/jiayoushing/management/system/dm/repository/MaterialsRepository.class
+com/jiayoushing/management/system/dm/model/Equipments.class
+com/jiayoushing/management/system/dm/model/Role.class
+com/jiayoushing/management/system/dm/model/Sites.class
+com/jiayoushing/management/system/dm/repository/SitesRepository.class

@@ -1,5 +1,6 @@
 package com.jiayoushing.management.system.dm.model;
 
+import org.hibernate.annotations.SQLRestriction;
 import org.springframework.data.annotation.Id;
 
 import jakarta.persistence.Column;
@@ -16,11 +17,16 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SQLRestriction("is_deleted = '0'")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
+    /** 角色的名稱 */
     @Column(nullable = false, unique = true)
     private String roleName;
+
+    @Column(nullable = false)
+    private String isDeleted = "0";
 }
