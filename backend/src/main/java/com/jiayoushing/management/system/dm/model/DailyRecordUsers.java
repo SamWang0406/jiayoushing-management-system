@@ -18,30 +18,19 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "daily_records")
+@Table(name = "daily_record_users")
 @SQLRestriction("is_deleted = '0'")
-public class DailyRecords {
+public class DailyRecordUsers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    /** 工地ID
-     * isOutsourcing = "0"，才會有siteId
-     */
-    private String siteId;
+    /** 每日紀錄ID */
+    private Integer dailyRecordId;
 
-    /** 是否為外調 */
-    private String isOutsourcing = "0";
+    /** 用戶ID */
+    private Integer userId;
 
-    /** 外調工地
-     * isOutsourcing = "1"，才會有outsourcingSite
-     */
-    private String outsourcingSite;
-
-    /** 紀錄的使用者 */
-    private Integer recordUserId;
-
-    /** 紀錄的日期 */
     @Column(nullable = false)
     private LocalDate recordDate;
 

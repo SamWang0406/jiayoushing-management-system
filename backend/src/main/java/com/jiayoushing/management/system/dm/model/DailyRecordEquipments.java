@@ -1,7 +1,5 @@
 package com.jiayoushing.management.system.dm.model;
 
-import java.time.LocalDate;
-
 import org.hibernate.annotations.SQLRestriction;
 import org.springframework.data.annotation.Id;
 
@@ -18,32 +16,18 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "daily_records")
+@Table(name = "daily_record_equipments")
 @SQLRestriction("is_deleted = '0'")
-public class DailyRecords {
+public class DailyRecordEquipments {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    /** 工地ID
-     * isOutsourcing = "0"，才會有siteId
-     */
-    private String siteId;
+    /** 每日紀錄ID */
+    private Integer dailyRecordId;
 
-    /** 是否為外調 */
-    private String isOutsourcing = "0";
-
-    /** 外調工地
-     * isOutsourcing = "1"，才會有outsourcingSite
-     */
-    private String outsourcingSite;
-
-    /** 紀錄的使用者 */
-    private Integer recordUserId;
-
-    /** 紀錄的日期 */
-    @Column(nullable = false)
-    private LocalDate recordDate;
+    /** 機具ID */
+    private Integer equipmentId;
 
     @Column(nullable = false)
     private String isDeleted = "0";

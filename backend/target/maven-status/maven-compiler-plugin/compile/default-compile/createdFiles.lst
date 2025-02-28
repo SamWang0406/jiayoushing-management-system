@@ -1,3 +1,4 @@
+com/jiayoushing/management/system/dm/model/DailyRecordEquipments.class
 com/jiayoushing/management/system/App.class
 com/jiayoushing/management/system/dm/model/Equipments$Status.class
 com/jiayoushing/management/system/dm/repository/DailyRecordsRepository.class
@@ -5,8 +6,11 @@ com/jiayoushing/management/system/dm/repository/RoleRepository.class
 com/jiayoushing/management/system/dm/repository/UsersRepository.class
 com/jiayoushing/management/system/dm/model/Users.class
 com/jiayoushing/management/system/dm/model/DailyRecords.class
+com/jiayoushing/management/system/lib/serivce/UsersService.class
 com/jiayoushing/management/system/dm/model/Materials.class
 com/jiayoushing/management/system/dm/repository/EquipmentsRepository.class
+com/jiayoushing/management/system/dm/model/DailyRecordUsers.class
+com/jiayoushing/management/system/dm/model/DailyRecordMaterials.class
 com/jiayoushing/management/system/dm/repository/MaterialsRepository.class
 com/jiayoushing/management/system/dm/model/Equipments.class
 com/jiayoushing/management/system/dm/model/Role.class
