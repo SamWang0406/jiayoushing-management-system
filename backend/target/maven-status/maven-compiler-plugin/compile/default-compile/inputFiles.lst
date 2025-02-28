@@ -1,1 +1,7 @@
 /Users/rd/sam/jiayoushing-management-system/backend/src/main/java/com/jiayoushing/management/system/App.java
+/Users/rd/sam/jiayoushing-management-system/backend/src/main/java/com/jiayoushing/management/system/dm/model/DailyRecords.java
+/Users/rd/sam/jiayoushing-management-system/backend/src/main/java/com/jiayoushing/management/system/dm/model/Equipments.java
+/Users/rd/sam/jiayoushing-management-system/backend/src/main/java/com/jiayoushing/management/system/dm/model/Materials.java
+/Users/rd/sam/jiayoushing-management-system/backend/src/main/java/com/jiayoushing/management/system/dm/model/Role.java
+/Users/rd/sam/jiayoushing-management-system/backend/src/main/java/com/jiayoushing/management/system/dm/model/Sites.java
+/Users/rd/sam/jiayoushing-management-system/backend/src/main/java/com/jiayoushing/management/system/dm/model/Users.java
